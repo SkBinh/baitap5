@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <form method="post" action="http://demo.codegym.vn/6/registration_form/register.php">
+        <div>
+            <h2>Market Research Survey</h2>
+            <p>Please take a few moments to complete this satisfaction survey</p>
+        </div>
+        <hr>
+        <div>
+           <p>What is your age range?</p>
+           <select name="age">
+            <option value="tuoi">18 - 24</option>
+            <option value="tuoi">25 - 34</option>
+            <option value="tuoi">35 - 50</option>
+            <option value="tuoi">50+</option>
+           </select>
+        </div>
+        <div>
+            <p>What is your yearly income range?</p>
+            <select name="money">
+                <option value="tien"> $0 - $25,000</option>
+                <option value="tien"> $25,001 - $50,000</option>
+                <option value="tien"> $50,001 - $100,000</option>
+                <option value="tien"> $100,000+</option>
+            </select>
+        </div>
+        <div>
+            <p>Gender</p>
+            <input type="radio" name="gender" value="male">Male <br>
+            <input type="radio" name="gender" value="female">Female
+        </div>
+        <div>
+            <p>Which of the following products have your purchased in the last 2 months. Please checkk all that apply.</p>
+            <input type="checkbox" name="sp" >Product 1 <br>
+            <input type="checkbox" name="sp" >Product 2 <br>
+            <input type="checkbox" name="sp" >Product 3
+        </div>
+        <div>
+            <p>How often would you use our new product?</p>
+            <input type="radio" name="day"> Daily <br>
+            <input type="radio" name="day"> Weekly <br>
+            <input type="radio" name="day"> Monthly
+        </div>
+        <div>
+            <p>What would you pay for the new product.</p>
+            <label>$</label>
+            <input type="number" name="money"> .
+            <input type="number" name="money" maxlength="2">
+        </div>
+    </form>   
+</body>
+</html>
