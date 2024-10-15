@@ -13,46 +13,162 @@
         </div>
         <hr>
         <div>
-           <p>What is your age range?</p>
+           <h4>What is your age range?</h4>
            <select name="age">
-            <option value="tuoi">18 - 24</option>
-            <option value="tuoi">25 - 34</option>
-            <option value="tuoi">35 - 50</option>
-            <option value="tuoi">50+</option>
+            <option value="18 - 24">18 - 24</option>
+            <option value="25 - 34">25 - 34</option>
+            <option value="35 - 50">35 - 50</option>
+            <option value="50+">50+</option>
            </select>
         </div>
+        <hr>
         <div>
-            <p>What is your yearly income range?</p>
+            <h4>What is your yearly income range?</h4>
             <select name="money">
-                <option value="tien"> $0 - $25,000</option>
-                <option value="tien"> $25,001 - $50,000</option>
-                <option value="tien"> $50,001 - $100,000</option>
-                <option value="tien"> $100,000+</option>
+                <option value="$0 - $25,000"> $0 - $25,000</option>
+                <option value="$25,001 - $50,000"> $25,001 - $50,000</option>
+                <option value="$50,001 - $100,000"> $50,001 - $100,000</option>
+                <option value="$100,000+"> $100,000+</option>
             </select>
         </div>
+        <hr>
         <div>
             <p>Gender</p>
-            <input type="radio" name="gender" value="male">Male <br>
-            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label> <br>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label> <br>
         </div>
+        <hr>
         <div>
-            <p>Which of the following products have your purchased in the last 2 months. Please checkk all that apply.</p>
-            <input type="checkbox" name="sp" >Product 1 <br>
-            <input type="checkbox" name="sp" >Product 2 <br>
-            <input type="checkbox" name="sp" >Product 3
+            <h4>Which of the following products have your purchased in the last 2 months. Please checkk all that apply.</h4>
+            <input type="checkbox" name="sp" id="Product 1" >
+            <label for="Product 1">Product 1</label> <br>
+            <input type="checkbox" name="sp" id="Product 2">
+            <label for="Product 2">Product 2</label> <br>
+            <input type="checkbox" name="sp" id="Product 3">
+            <label for="Product 3">Product 3</label>
         </div>
+        <hr>
         <div>
-            <p>How often would you use our new product?</p>
-            <input type="radio" name="day"> Daily <br>
-            <input type="radio" name="day"> Weekly <br>
-            <input type="radio" name="day"> Monthly
+            <h4>How often would you use our new product?</h4>
+            <input type="radio" name="day" id="Daily"> 
+            <label for="Daily">Daily</label> <br>
+            <input type="radio" name="day" id="Weekly"> 
+            <label for="Weekly">Weekly</label> <br>
+            <input type="radio" name="day" id="Monthly"> 
+            <label for="Monthly">Monthly</label>
         </div>
+        <hr>
         <div>
-            <p>What would you pay for the new product.</p>
+            <h4>What would you pay for the new product.</h4>
             <label>$</label>
             <input type="number" name="money"> .
             <input type="number" name="money" maxlength="2">
         </div>
+        <div>
+            <span style="margin-right: 150px">Dollars</span>
+            <span>cent</span>
+        </div>
+        <hr>
+        <div>
+            <h4>What features would you like to see in the new product.</h4>
+            <textarea name="text" cols="50" rows="4"></textarea>
+        </div>
+        <hr>
+        <div>
+        <h4>Please rate your level of agreement with the following statements.</h4>
+        </div>
+        <table border="1" style="text-align: center;">
+            <tr>
+                <th> </th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Argee</th>
+                <th>Strongly Argee</th>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Our products are priced fairly.</td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio" name="1-1" id="1">
+                        <label for="1">1</label>
+                    </div>
+                </td>
+               <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio" name="1-1" id="2">
+                        <label for="2">2</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio" name="1-1" id="3">
+                        <label for="3">3</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio" name="1-1" id="4">
+                        <label for="4">4</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Our products are high quality.</td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio"name="1-2" id="1-2">
+                        <label for="1-2">1</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio"name="1-2" id="2-2">
+                        <label for="2-2">2</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio" name="1-2"id="3-2">
+                        <label for="3-2">3</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio" name="1-2"id="4-2">
+                        <label for="4-2">4</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">You would recommend our product to a friend or coworker</td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio"name="1-3" id="1-3">
+                        <label for="1-3">1</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio"name="1-3" id="2-3">
+                        <label for="2-3">2</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio"name="1-3" id="3-3">
+                        <label for="3-3">3</label>
+                    </div>
+                </td>
+                <td>
+                    <div style="display: flex; flex-direction: column;">
+                        <input type="radio"name="1-3" id="4-3">
+                        <label for="4-3">4</label>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </form>   
 </body>
 </html>
