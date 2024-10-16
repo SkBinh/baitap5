@@ -1,0 +1,47 @@
+h1{
+    color: blue;
+   text-align: center;
+}
+table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid gray;
+    }
+    
+    thead th {
+        border: 1px solid black;
+    }
+    
+    tbody td {
+        border: 1px solid gray; 
+    }
+    
+    .bgred {
+        background-color: red;
+        color: white;
+    }
+    
+    .bgora {
+        background-color: orange;
+        color: white;
+    }
+    
+    .bgblue {
+        background-color: blue;
+        color: white;
+    }
+thead td {
+    border: none;
+}
+thead th{
+    border: 1px solid white;
+}
+sub{
+    font-size: 0.6em;
+    vertical-align: sub;
+}
